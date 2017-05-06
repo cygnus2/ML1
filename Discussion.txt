@@ -1,0 +1,8 @@
+1. After plotting a histogram of the prices alone, there seem to be
+   some properties with super high costs, like > 10^7. 
+   Can one obtain useful information from them, or are they like anomalies?
+
+2. Maybe an idea is to use covariance of the prices with some of the features
+   to check which feature is important. 
+
+3. My octave implemenation complains out of memory! GAH! 
