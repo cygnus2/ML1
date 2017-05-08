@@ -1,3 +1,5 @@
+Debasish:
+
 1. After plotting a histogram of the prices alone, there seem to be
    some properties with super high costs, like > 10^7. 
    Can one obtain useful information from them, or are they like anomalies?
@@ -6,3 +8,20 @@
    to check which feature is important. 
 
 3. My octave implemenation complains out of memory! GAH! 
+
+Miguel:
+
+Mon  8 May 20:16:34 CEST 2017
+
+1. From the histogram of prices, maybe it is a good idea to do some sort of 
+   transformation of the data. Given that the histogram shows a very long tail
+   using the mean for feature renormalization might not be a good idea.
+
+2. A naive look at the correlation between the variables 3,4,5 does not show 
+   any particularly interesting result. Maybe because of 1. (??)
+
+3. By plotting full_sq vs. life_sq it is clear that there is some 
+   misstyped/wrong data. Logically, life_sq <= full_sq, but actually there are
+   36 examples where this is not true. This is a 0.15%, so quite small, but 
+   it could give problems in the analysis. How much of the data is wrong?
+

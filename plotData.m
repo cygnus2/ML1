@@ -11,8 +11,8 @@ figure; % open a new figure window
 %       markers larger by using plot(..., 'rx', 'MarkerSize', 10);
 %plot(x, y, 'rx', 'MarkerSize', 10);
 hist(y,300);
-%ylabel('Price');
-%xlabel('document-ID');
+ylabel('Frequency');
+xlabel('Price');
 
 
 % ============================================================

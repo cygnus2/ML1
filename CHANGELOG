@@ -1,0 +1,12 @@
+Mon  8 May 18:12:39 CEST 2017
+
+Miguel: 
+In order to clean up loading the data, I have created the file loadData.m
+It reads train.csv and outputs a matrix with all the non-numeric entries 
+transformed to nan. This should be easier to handle for the analysis.
+
+-Also, it is faster if instead of reading train.csv everytime, the data is 
+saved in train.mat. To produce train.mat for the first time, simply use 
+>> loadData(1);
+
+This will create train.mat, and then sberbank can be run faster.
