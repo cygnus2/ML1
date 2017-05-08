@@ -2,7 +2,7 @@
 %% Initialization
 clear ; close all; clc
 % Complete warmUpExercise.m 
-fprintf('Reading test.csv ... \n');
+fprintf('Reading train.csv ... \n');
 
 % load package for reading csv files
 pkg load io
