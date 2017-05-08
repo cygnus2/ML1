@@ -3,7 +3,7 @@
 clear ; close all; clc
 % Complete warmUpExercise.m 
 fprintf('Reading train.csv ... \n');
-%this is random
+
 % load package for reading csv files
 pkg load io
 % load raw training data
@@ -16,6 +16,9 @@ raw = csv2cell('../train.csv');
 m = size(raw,1); 
 X = [ raw{[2:m],[3:5]}];
 X = reshape(X, size(X,2)/3, 3);
+
+
+
 
 %number of features
 %mf = size(raw,2);
@@ -53,6 +56,12 @@ X = reshape(X, size(X,2)/3, 3);
 %ylabel('Cost J');
 
 % Display gradient descent's result
+<<<<<<< HEAD
 %fprintf('Theta computed from gradient descent: \n');
 %fprintf(' %f \n', theta);
 %fprintf('\n');
+=======
+fprintf('Theta computed from gradient descent: \n');
+fprintf(' %f \n', theta);
+fprintf('\n');
+>>>>>>> c11b2b42bab653f18eab4eb2c3fa7e0b4ef69f2e
