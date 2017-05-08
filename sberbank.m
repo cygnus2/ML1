@@ -3,7 +3,7 @@
 clear ; close all; clc
 % Complete warmUpExercise.m 
 fprintf('Reading train.csv ... \n');
-
+%this is random
 % load package for reading csv files
 pkg load io
 % load raw training data
