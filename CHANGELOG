@@ -10,3 +10,17 @@ saved in train.mat. To produce train.mat for the first time, simply use
 >> loadData(1);
 
 This will create train.mat, and then sberbank can be run faster.
+
+Tue  9 May 15:47:24 CEST 2017
+
+Miguel:
+
+I have created the file explore.m, in which we can study the features. I thought 
+it would be better to separate this from the proper regression/learning to be 
+done in sberbank.m
+
+For now there is some overlap with sberbank.m but we should clean this up later on.
+
+Simply run:
+
+>> explore;
