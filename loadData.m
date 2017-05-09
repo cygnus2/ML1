@@ -20,11 +20,16 @@ if produce==1
   %preparing output for analysis
   Xlab=raw(1,:); %extract cell array with labels of the features
   raw(1,:)=[]; %clean up raw data, eliminate labels row
+  %prepare the timestamp variable
+  for ti=1:size(raw,1)
+    temptime(ti,1)=datenum(raw{ti,2},29); %save the timestamp in temporary variable temptime
+  end
   indchar=cellfun(@ischar,raw); %get the indices of non-numeric values
   raw(indchar)={nan}; %transform all non-numeric values to nan for easier manipulation
   rawmat=cell2mat(raw); %transform raw cell data to a matrix
   y=rawmat(:,end);
   X=rawmat(:,1:end-1);
+  X(:,2)=temptime; %add the timestamp variable to the data
   
   %save the data to avoid loading it all the time
   save train.mat X Xlab y;
