@@ -1,0 +1,15 @@
+To read the training dataset run:
+
+>>loadData
+
+To read the test dataset run:
+
+>>loadData(1)
+
+To explore the variables run:
+
+>>explore
+
+To do the analysis run:
+
+>>sberbank

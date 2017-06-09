@@ -7,7 +7,7 @@ transformed to nan. This should be easier to handle for the analysis.
 
 -Also, it is faster if instead of reading train.csv everytime, the data is 
 saved in train.mat. To produce train.mat for the first time, simply use 
->> loadData(1);
+>> loadData;
 
 This will create train.mat, and then sberbank can be run faster.
 
@@ -24,3 +24,9 @@ For now there is some overlap with sberbank.m but we should clean this up later 
 Simply run:
 
 >> explore;
+
+Fri  9 Jun 23:47:47 CEST 2017
+
+Miguel:
+
+I have modified the file loadData.m, now it loads either train.csv or test.csv
